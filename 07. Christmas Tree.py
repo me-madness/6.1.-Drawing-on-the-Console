@@ -1,5 +1,6 @@
-n = int(input())
+# 07. Christmas Tree
 
+n = int(input())
 # First Way
 for row in range(n+1):
     stars = '*'*row

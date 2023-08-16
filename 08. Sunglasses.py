@@ -1,4 +1,7 @@
+# 08. Sunglasss
+
 n = int(input())
+# First Way
 print('*' * (2 * n), end='')
 print(' ' * (n), end='')
 print('*' * (2 * n))
@@ -14,3 +17,12 @@ print('*'*(2 * n), end='')
 print(' '*(n), end='')
 print('*'*(2 * n))
 
+# Second Way
+stars = 2 * n
+space = 5 * n - 4 * n 
+slash = 2 * n-2
+
+print('*'*stars + ' '*stars + '*'*stars)
+
+for row in range(n - 2):
+    print('*' + '/'*slash + '*' + ' '*space + '*' + '/'*slash + '*')
